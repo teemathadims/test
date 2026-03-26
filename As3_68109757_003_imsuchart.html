@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 3 - Creating Circles with CSS</title>
+    <style>
+        /* CSS สำหรับวงกลมวงแรก (สีส้ม) */
+        .spiner {
+            background-color: orangered;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            border: 25px solid white;
+            border-top: 20px solid indigo;
+            animation: ani 2.5s linear infinite;
+            margin-bottom: 20px;
+        }
+
+        /* CSS สำหรับวงกลมวงที่สอง (สีชมพูตามรูปตัวอย่าง) */
+        .spiner2 {
+            background-color: #ff40db;
+            /* สีชมพู */
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            border: 25px solid white;
+            border-top: 20px solid #666;
+            /* สีเทาเข้ม */
+            animation: ani 2.5s linear infinite;
+        }
+
+        /* กำหนดการเคลื่อนที่ (หมุน 360 องศา) */
+        @keyframes ani {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* ตกแต่งฟอนต์เล็กน้อยให้ดูเรียบร้อย */
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>68109757 Teemathad Imsuchart</h1>
+    <h2>เลขที่: 39 กลุ่มเรียน: 003</h2>
+
+    <hr>
+
+    <div class="spiner"></div>
+
+    <div class="spiner2"></div>
+
+</body>
+
+</html>
